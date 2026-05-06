@@ -1,6 +1,3 @@
-Aquí tienes el Markdown limpio, listo para copiar y pegar directamente en tu README.md:
-
-```markdown
 # 🧪 Calidad de Software – UAN
 
 Repositorio oficial del curso **Calidad de Software** de la **Universidad Antonio Nariño**, orientado al diseño, implementación y análisis crítico de pruebas automatizadas en Python.
@@ -142,4 +139,3 @@ Universidad Antonio Nariño
 ---
 
 *“Pasar todos los tests no significa que el software sea correcto; significa que pasa las pruebas que escribiste.”*
-```
