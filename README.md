@@ -1,99 +1,145 @@
-# Software Quality UAN
+Aquí tienes el Markdown limpio, listo para copiar y pegar directamente en tu README.md:
 
-Repositorio del curso **Calidad de Software** (UAN), enfocado en el diseño, implementación y evaluación de pruebas automatizadas en Python.
+```markdown
+# 🧪 Calidad de Software – UAN
 
----
+Repositorio oficial del curso **Calidad de Software** de la **Universidad Antonio Nariño**, orientado al diseño, implementación y análisis crítico de pruebas automatizadas en Python.
 
-## 🎯 Objetivo
-
-Desarrollar en los estudiantes la capacidad de:
-
-* Diseñar pruebas unitarias efectivas
-* Utilizar mocks, stubs y test doubles
-* Interpretar métricas de cobertura de código
-* Identificar limitaciones de las pruebas automatizadas
-* Construir pruebas de integración y end-to-end
+**Docente:** MSc. Andrés Bermúdez
 
 ---
 
-## 📚 Contenido del repositorio
+## 🎯 Objetivo general
 
-El curso está organizado en módulos progresivos:
+Desarrollar competencias para:
+
+- Diseñar pruebas unitarias, de integración y end‑to‑end efectivas.
+- Utilizar dobles de prueba (mocks, stubs, fakes) con criterio.
+- Interpretar y cuestionar métricas de cobertura de código.
+- Reconocer las limitaciones de las pruebas automatizadas.
+- Evaluar la calidad de las pruebas como parte de la calidad del software.
+
+---
+
+## 📁 Estructura del repositorio
 
 ```
-talleres/
-├── unit_testing/
-├── integration_testing/
-└── e2e_testing/
+software-quality-uan/
+├── talleres/
+│   ├── unit_testing/
+│   ├── integration_testing/
+│   └── e2e_testing/
+├── notebooks/
+├── src/                    # Código de producción
+├── tests/                  # Pruebas (incompletas o débiles intencionalmente)
+├── tests_hidden/           # Pruebas de evaluación (solo docente)
+├── requirements.txt
+└── README.md
 ```
 
----
-
-## 🧪 Enfoque pedagógico
-
-Este repositorio no solo enseña herramientas, sino también criterio:
-
-* Las pruebas pueden pasar y aun así estar mal diseñadas
-* El 100% de cobertura no garantiza corrección
-* Es posible “engañar” a los tests si no son rigurosos
+Cada módulo del curso es autocontenido e incluye instrucciones detalladas en su respectiva carpeta.
 
 ---
 
-## 🧑‍🎓 Metodología
+## 🧠 Enfoque pedagógico
 
-Cada taller incluye:
+Este repositorio **no solo enseña herramientas**, sino que desarrolla criterio ingenieril:
 
-* Código base
-* Tests incompletos o intencionalmente débiles
-* Ejercicios prácticos
-* Reflexión crítica
+- ✅ Los tests pueden pasar y aun así ser deficientes.
+- ✅ 100 % de cobertura no implica corrección.
+- ✅ Es posible “engañar” a una suite de pruebas si no es rigurosa.
+- ✅ La reflexión y el análisis crítico son tan importantes como el código.
+
+---
+
+## 👣 Metodología de los talleres
+
+Cada taller está compuesto por:
+
+1. **Código base** que debe ser probado.
+2. **Tests iniciales** (a menudo incompletos o deliberadamente débiles).
+3. **Ejercicios prácticos** guiados y abiertos.
+4. **Preguntas de reflexión** que invitan a analizar la calidad de las pruebas.
 
 Los estudiantes deben:
 
-* Completar pruebas
-* Analizar su calidad
-* Identificar debilidades
-* Proponer mejoras
+- Completar y mejorar las pruebas.
+- Emplear correctamente mocks, stubs y fakes.
+- Identificar debilidades en las suites existentes.
+- Proponer y justificar mejoras.
+- Entregar un breve documento de reflexión.
 
 ---
 
-## 📦 Entregables
+## ⚙️ Instalación y uso
+
+```bash
+# Clonar el repositorio
+git clone <url-del-repo>
+cd software-quality-uan
+
+# Crear entorno virtual
+python -m venv venv
+source venv/bin/activate   # En Windows: venv\Scripts\activate
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Ejecutar las pruebas
+pytest
+
+# Medir cobertura
+coverage run -m pytest
+coverage report -m
+coverage html
+```
+
+---
+
+## 📦 Entregables y evaluación
 
 Cada módulo requiere:
 
-* Implementación de pruebas
-* Uso adecuado de mocks
-* Respuestas reflexivas sobre calidad del testing
+- Código de las pruebas implementadas.
+- Uso adecuado de dobles de prueba.
+- Documento de reflexión (Markdown o PDF) que responda a las preguntas planteadas.
+
+La calificación no depende solo de que los tests pasen, sino de:
+
+- La calidad y pertinencia de las aserciones.
+- La correcta utilización de mocks.
+- La profundidad del análisis crítico.
+- La capacidad de detectar errores reales e identificar pruebas débiles.
 
 ---
 
-## ⚠️ Nota importante
+## 🛠️ Tecnologías utilizadas
 
-Pasar todos los tests no implica una solución correcta.
-La evaluación considera tanto la implementación como la calidad de las pruebas.
-
----
-
-## 🛠️ Tecnologías
-
-* Python 3.x
-* pytest
-* pytest-mock
-* coverage
-* hypothesis (opcional)
+- Python ≥ 3.8
+- [pytest](https://docs.pytest.org/)
+- [pytest-mock](https://pytest-mock.readthedocs.io/)
+- [coverage](https://coverage.readthedocs.io/)
+- [Hypothesis](https://hypothesis.readthedocs.io/) (opcional, para property‑based testing)
 
 ---
 
-## 👨‍🏫 Uso docente
+## 👨‍🏫 Para el docente
 
-Este repositorio está diseñado para:
+Este repositorio está preparado para:
 
-* Clases prácticas
-* Evaluaciones automatizadas
-* Discusión sobre calidad de pruebas
+- Clases prácticas presenciales o virtuales.
+- Evaluación automatizada con `pytest` (incluye tests ocultos en `tests_hidden/`).
+- Discusión en clase sobre calidad de software y de pruebas.
 
 ---
 
 ## 📌 Autor
 
-Curso de Calidad de Software – UAN
+**MSc. Andrés Bermúdez**  
+Curso de Calidad de Software  
+Universidad Antonio Nariño
+
+---
+
+*“Pasar todos los tests no significa que el software sea correcto; significa que pasa las pruebas que escribiste.”*
+```
