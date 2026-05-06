@@ -22,16 +22,50 @@ Desarrollar competencias para:
 
 ```
 software-quality-uan/
+│
+├── README.md
+├── requirements.txt
+│
 ├── talleres/
 │   ├── unit_testing/
+│   │   ├── README.md
+│   │   ├── ENTREGABLE.md
+│   │   ├── requirements.txt
+│   │   │
+│   │   ├── data/
+│   │   │   └── sample.txt
+│   │   │
+│   │   ├── notebooks/
+│   │   │   ├── 01_mocks.ipynb
+│   │   │   ├── 02_coverage.ipynb
+│   │   │   ├── 03_analizador.ipynb
+│   │   │   └── 04_lado_oscuro.ipynb
+│   │   │
+│   │   ├── src/
+│   │   │   ├── __init__.py
+│   │   │   ├── analizador.py
+│   │   │   ├── estadistica.py
+│   │   │   └── ordenador.py
+│   │   │
+│   │   ├── tests/
+│   │   │   ├── test_analizador.py
+│   │   │   ├── test_estadistica.py
+│   │   │   └── test_ordenar.py
+│   │   │
+│   │   └── tests_hidden/          # 🔒 Solo para el docente
+│   │       ├── test_ordenar_real.py
+│   │       └── test_promedio_real.py
+│   │
 │   ├── integration_testing/
+│   │   └── coming_soon.txt
+│   │
 │   └── e2e_testing/
-├── notebooks/
-├── src/                    # Código de producción
-├── tests/                  # Pruebas (incompletas o débiles intencionalmente)
-├── tests_hidden/           # Pruebas de evaluación (solo docente)
-├── requirements.txt
-└── README.md
+│       └── coming_soon.txt
+│
+├── notebooks/                     # (Opcional – material global del curso)
+├── src/                           # (Opcional – código compartido entre módulos)
+├── tests/                         # (Opcional – pruebas compartidas)
+└── tests_hidden/                  # (Opcional – pruebas ocultas globales-solo para el docente)
 ```
 
 Cada módulo del curso es autocontenido e incluye instrucciones detalladas en su respectiva carpeta.
