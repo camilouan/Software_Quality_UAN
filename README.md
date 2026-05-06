@@ -10,7 +10,7 @@ Repositorio oficial del curso **Calidad de Software** de la **Universidad Antoni
 
 Desarrollar competencias para:
 
-- Diseñar pruebas unitarias, de integración y end‑to‑end efectivas.
+- Diseñar pruebas unitarias, de integración y end-to-end efectivas.
 - Utilizar dobles de prueba (mocks, stubs, fakes) con criterio.
 - Interpretar y cuestionar métricas de cobertura de código.
 - Reconocer las limitaciones de las pruebas automatizadas.
@@ -52,7 +52,7 @@ software-quality-uan/
 │   │   │   ├── test_estadistica.py
 │   │   │   └── test_ordenar.py
 │   │   │
-│   │   └── tests_hidden/          # 🔒 Solo para el docente
+│   │   └── tests_hidden/
 │   │       ├── test_ordenar_real.py
 │   │       └── test_promedio_real.py
 │   │
@@ -62,10 +62,10 @@ software-quality-uan/
 │   └── e2e_testing/
 │       └── coming_soon.txt
 │
-├── notebooks/                     # (Opcional – material global del curso)
-├── src/                           # (Opcional – código compartido entre módulos)
-├── tests/                         # (Opcional – pruebas compartidas)
-└── tests_hidden/                  # (Opcional – pruebas ocultas globales-solo para el docente)
+├── notebooks/
+├── src/
+├── tests/
+└── tests_hidden/
 ```
 
 Cada módulo del curso es autocontenido e incluye instrucciones detalladas en su respectiva carpeta.
@@ -74,12 +74,14 @@ Cada módulo del curso es autocontenido e incluye instrucciones detalladas en su
 
 ## 🧠 Enfoque pedagógico
 
-Este repositorio **no solo enseña herramientas**, sino que desarrolla criterio ingenieril:
+El propósito de este repositorio no se limita a enseñar el uso de herramientas de prueba. Busca, sobre todo, desarrollar criterio ingenieril frente a la calidad del software de pruebas. A lo largo de los talleres, el estudiante se enfrenta a situaciones reales donde:
 
-- ✅ Los tests pueden pasar y aun así ser deficientes.
-- ✅ 100 % de cobertura no implica corrección.
-- ✅ Es posible “engañar” a una suite de pruebas si no es rigurosa.
-- ✅ La reflexión y el análisis crítico son tan importantes como el código.
+- Una suite de pruebas puede ejecutarse sin errores y, aun así, ser insuficiente o mal diseñada.
+- Alcanzar el 100 % de cobertura de código no implica que el software sea correcto ni que las pruebas tengan la calidad necesaria.
+- Es posible escribir código que "burla" pruebas poco rigurosas, evidenciando la necesidad de diseñar aserciones sólidas y casos representativos.
+- La reflexión crítica y el análisis de las debilidades de las pruebas son habilidades tan fundamentales como la propia implementación de las mismas.
+
+En este curso las pruebas no son solo un producto que debe pasar, sino un objeto de estudio que debe ser cuestionado, mejorado y evaluado con rigor.
 
 ---
 
@@ -87,10 +89,10 @@ Este repositorio **no solo enseña herramientas**, sino que desarrolla criterio 
 
 Cada taller está compuesto por:
 
-1. **Código base** que debe ser probado.
-2. **Tests iniciales** (a menudo incompletos o deliberadamente débiles).
-3. **Ejercicios prácticos** guiados y abiertos.
-4. **Preguntas de reflexión** que invitan a analizar la calidad de las pruebas.
+1. Código base que debe ser probado.
+2. Tests iniciales (a menudo incompletos o deliberadamente débiles).
+3. Ejercicios prácticos guiados y abiertos.
+4. Preguntas de reflexión sobre la calidad de las pruebas.
 
 Los estudiantes deben:
 
@@ -98,28 +100,23 @@ Los estudiantes deben:
 - Emplear correctamente mocks, stubs y fakes.
 - Identificar debilidades en las suites existentes.
 - Proponer y justificar mejoras.
-- Entregar un breve documento de reflexión.
+- Entregar un documento de reflexión.
 
 ---
 
 ## ⚙️ Instalación y uso
 
 ```bash
-# Clonar el repositorio
 git clone <url-del-repo>
 cd software-quality-uan
 
-# Crear entorno virtual
 python -m venv venv
-source venv/bin/activate   # En Windows: venv\Scripts\activate
+source venv/bin/activate   # Windows: venv\Scripts\activate
 
-# Instalar dependencias
 pip install -r requirements.txt
 
-# Ejecutar las pruebas
 pytest
 
-# Medir cobertura
 coverage run -m pytest
 coverage report -m
 coverage html
@@ -131,36 +128,36 @@ coverage html
 
 Cada módulo requiere:
 
-- Código de las pruebas implementadas.
+- Código de pruebas implementadas.
 - Uso adecuado de dobles de prueba.
-- Documento de reflexión (Markdown o PDF) que responda a las preguntas planteadas.
+- Documento de reflexión en Markdown o PDF.
 
-La calificación no depende solo de que los tests pasen, sino de:
+La evaluación se basa en:
 
-- La calidad y pertinencia de las aserciones.
-- La correcta utilización de mocks.
-- La profundidad del análisis crítico.
-- La capacidad de detectar errores reales e identificar pruebas débiles.
+- Calidad de las aserciones.
+- Uso correcto de mocks.
+- Profundidad del análisis crítico.
+- Capacidad de detectar debilidades en las pruebas.
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 
 - Python ≥ 3.8
-- [pytest](https://docs.pytest.org/)
-- [pytest-mock](https://pytest-mock.readthedocs.io/)
-- [coverage](https://coverage.readthedocs.io/)
-- [Hypothesis](https://hypothesis.readthedocs.io/) (opcional, para property‑based testing)
+- pytest
+- pytest-mock
+- coverage
+- Hypothesis (opcional)
 
 ---
 
 ## 👨‍🏫 Para el docente
 
-Este repositorio está preparado para:
+Este repositorio está diseñado para:
 
 - Clases prácticas presenciales o virtuales.
-- Evaluación automatizada con `pytest` (incluye tests ocultos en `tests_hidden/`).
-- Discusión en clase sobre calidad de software y de pruebas.
+- Evaluación automatizada con pytest.
+- Discusión crítica sobre calidad de software y pruebas.
 
 ---
 
