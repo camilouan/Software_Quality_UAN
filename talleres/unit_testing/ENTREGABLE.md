@@ -2,7 +2,7 @@
 
 ## 🎯 Objetivo
 
-Este taller tiene como propósito comprender las limitaciones de las pruebas unitarias y desarrollar criterio para diseñar pruebas robustas, más allá de simplemente obtener resultados “en verde”.
+Este taller tiene como propósito comprender las limitaciones de las pruebas unitarias y desarrollar criterio para diseñar pruebas robustas, más allá de simplemente obtener resultados "en verde".
 
 ---
 
@@ -119,7 +119,7 @@ y responde:
 Responde:
 
 * ¿Qué aprendiste sobre las limitaciones de las pruebas unitarias?
-* ¿Qué significa realmente que “los tests pasen”?
+* ¿Qué significa realmente que "los tests pasen"?
 * ¿Cómo evitarías falsas confianzas en un proyecto real?
 
 ---
@@ -148,7 +148,3 @@ Se evaluará no solo que los tests pasen, sino:
 
 * La calidad de las aserciones
 * La capacidad de detectar errores reales
-* El uso correcto de mocks
-* La profundidad del análisis crítico
-
----
