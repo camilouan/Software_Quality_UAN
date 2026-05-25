@@ -1,6 +1,31 @@
 # Entregable del Taller de Pruebas E2E
 
-Debes entregar un archivo ZIP o repositorio con la siguiente estructura:
+## 📌 Modalidad de trabajo
+
+Este taller se puede realizar de forma **individual** o en **grupos de máximo 3 personas**.
+
+## 📦 Forma de entrega
+
+Deben entregar **un Pull Request (PR)** desde su rama hacia la rama principal del repositorio. Sigan estos pasos:
+
+1. **Clonen** el repositorio base proporcionado por el profesor.
+2. **Creen una rama** con el nombre que identifique a los autores, según la modalidad de trabajo:
+   - **Individual:** usen el formato `nombre_apellido1_apellido2`.  
+     Ejemplo: `andres_julian_bermudez_garcia`.
+   - **Grupal (máximo 3 personas):** usen los apellidos de todos los integrantes unidos por guiones bajos, en el orden que prefieran.  
+     Ejemplo: `bermudez_perez_gomez`.  
+     También pueden anteponer la palabra `grupo` si lo desean: `grupo_bermudez_perez_gomez`.
+   ```bash
+   git checkout -b nombre-de-la-rama
+   ```
+3. **Realicen todos los cambios** necesarios (código fuente, nuevas pruebas, informe).
+4. **Hagan commit** de sus cambios con un mensaje descriptivo.
+5. **Suban su rama** al repositorio remoto:
+   ```bash
+   git push origin nombre-de-la-rama
+   ```
+6. **Abran un Pull Request** desde su rama hacia `main` (o la rama que indique el profesor).
+   - En la **descripción del Pull Request** deben aparecer los **nombres completos y códigos (o identificaciones)** de todos los integrantes del equipo.
 
 ## 📁 Archivos requeridos
 

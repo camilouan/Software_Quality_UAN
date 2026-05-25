@@ -1,8 +1,13 @@
+
 # Taller: Pruebas E2E — Del navegador al sistema completo
 
 ## 🎯 Objetivo
 
 Comprender qué son las pruebas de extremo a extremo (End-to-End), cuándo son necesarias, cómo se implementan con Playwright en Python, y cuáles son sus principales limitaciones y antipatrones. Como complemento, se introduce Selenium para comprender la evolución histórica de las herramientas de automatización web.
+
+## 📌 Modalidad de trabajo
+
+Este taller se puede realizar de forma **individual** o en **grupos de máximo 3 personas**.
 
 ---
 
@@ -121,7 +126,28 @@ Usando el notebook `notebooks/04_lado_oscuro_e2e.ipynb`, responde:
 
 ## 📦 Entregable
 
-Sigue las instrucciones detalladas en `ENTREGABLE.md`.
+Debes entregar **un Pull Request (PR)** desde tu rama hacia la rama principal del repositorio. Sigue estos pasos:
+
+1. **Clona** el repositorio base proporcionado por el profesor.
+2. **Crea una rama** con el nombre que identifique a los autores, según la modalidad de trabajo:
+   - **Individual:** usa el formato `nombre_apellido1_apellido2`.  
+     Ejemplo: `andres_julian_bermudez_garcia`.
+   - **Grupal (máximo 3 personas):** usa los apellidos de todos los integrantes unidos por guiones bajos, en el orden que prefieran.  
+     Ejemplo: `bermudez_perez_gomez`.  
+     También pueden anteponer la palabra `grupo` si lo desean: `grupo_bermudez_perez_gomez`.
+   ```bash
+   git checkout -b nombre-de-la-rama
+   ```
+3. **Realiza todos los cambios** necesarios (código fuente, nuevas pruebas, informe).
+4. **Haz commit** de tus cambios con un mensaje descriptivo.
+5. **Sube tu rama** al repositorio remoto:
+   ```bash
+   git push origin nombre-de-la-rama
+   ```
+6. **Abre un Pull Request** desde tu rama hacia `main` (o la rama que indique el profesor).
+   - En la **descripción del Pull Request** deben aparecer los **nombres completos y códigos (o identificaciones)** de todos los integrantes del equipo.
+
+El detalle completo de los criterios de evaluación y requisitos de entrega se encuentra en `ENTREGABLE.md`.
 
 ---
 
