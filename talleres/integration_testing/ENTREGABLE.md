@@ -4,6 +4,10 @@
 
 Este taller tiene como propósito comprender la importancia de las pruebas de integración, aplicar los enfoques bottom‑up, top‑down, sandwich y big‑bang, y utilizar stubs y drivers para validar la colaboración entre módulos. Se busca desarrollar criterio para diseñar pruebas de integración robustas, que vayan más allá de simplemente obtener resultados "en verde".
 
+## 📌 Modalidad de trabajo
+
+Este taller se puede realizar de forma **individual** o en **grupos de máximo 3 personas**.
+
 ---
 
 ## 🧪 Parte 1 – Exploración inicial
@@ -121,24 +125,30 @@ Responde:
 
 ## 📦 Entregable
 
-Debes entregar **un Pull Request (PR)** desde tu rama personal hacia la rama principal del repositorio. Sigue estos pasos:
+Debes entregar **un Pull Request (PR)** desde tu rama hacia la rama principal del repositorio. Sigue estos pasos:
 
 1. **Clona** el repositorio base proporcionado por el profesor.
-2. **Crea una rama** con tu nombre completo en minúsculas y unido con guiones bajos. Ejemplo: `andres_julian_bermudez_garcia`.  
+2. **Crea una rama** con el nombre que identifique a los autores, según la modalidad de trabajo:
+   - **Individual:** usa el formato `nombre_apellido1_apellido2`.  
+     Ejemplo: `andres_julian_bermudez_garcia`.
+   - **Grupal (máximo 3 personas):** usa los apellidos de todos los integrantes unidos por guiones bajos, en el orden que prefieran.  
+     Ejemplo: `bermudez_perez_gomez`.  
+     También pueden anteponer la palabra `grupo` si lo desean: `grupo_bermudez_perez_gomez`.
    ```bash
-   git checkout -b nombre_apellido1_apellido2
+   git checkout -b nombre-de-la-rama
    ```
 3. **Realiza todos los cambios** necesarios (código fuente corregido, nuevas pruebas, informe).
 4. **Haz commit** de tus cambios con un mensaje descriptivo.
 5. **Sube tu rama** al repositorio remoto:
    ```bash
-   git push origin nombre_apellido1_apellido2
+   git push origin nombre-de-la-rama
    ```
 6. **Abre un Pull Request** desde tu rama hacia `main` (o la rama que indique el profesor).
+   - En la **descripción del Pull Request** deben aparecer los **nombres completos y códigos (o identificaciones)** de todos los integrantes del equipo.
 
 ### Contenido del PR
 
-Tu rama debe incluir:
+La rama debe incluir:
 
 1. **Código fuente corregido** en `src/` (si encontraste errores de integración y los solucionaste).
 2. **Tests mejorados** en `tests/`:
